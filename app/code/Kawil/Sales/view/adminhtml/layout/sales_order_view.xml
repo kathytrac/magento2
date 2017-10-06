@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_items">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Kawil_Sales::order/view/items.phtml</argument>
+            </action>
+            <arguments>
+                <argument name="columns" xsi:type="array">
+                    <item name="cost" xsi:type="string" translate="true">Cost</item>
+                    <item name="kawil_lieferant" xsi:type="string" translate="true">Lieferant</item>
+                    <item name="kawil_alternative_lieferantent" xsi:type="string" translate="true">Alternative Lieferanten</item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

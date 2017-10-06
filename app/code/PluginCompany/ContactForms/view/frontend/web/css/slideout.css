@@ -1,0 +1,328 @@
+/*
+ * Created by:  Milan Simek
+ * Company:     Plugin Company
+ *
+ * LICENSE: http://plugin.company/docs/magento-extensions/magento-extension-license-agreement
+ *
+ * YOU WILL ALSO FIND A PDF COPY OF THE LICENSE IN THE DOWNLOADED ZIP FILE
+ *
+ * FOR QUESTIONS AND SUPPORT
+ * PLEASE DON'T HESITATE TO CONTACT US AT:
+ *
+ * SUPPORT@PLUGIN.COMPANY
+ */
+.pcform_slide {
+    width:500px;
+    position:fixed;
+    box-sizing:border-box;
+}
+.pcform_slide {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pcform_slide.expanded {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.open_pcform {
+    position:absolute;
+    width:50px;
+    height:50px;
+    font-size:30px;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+    background:#EE6E73;
+    color:white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-sizing:border-box;
+}
+.pcform_right {
+    top:100px;
+    right:-500px;
+}
+.pcform_left {
+    top:100px;
+    left:-500px;
+}
+.pcform_bottom_left {
+    bottom:-500px;
+    left:40px;
+    height:500px;
+}
+.pcform_bottom_right {
+    bottom:-500px;
+    right:40px;
+    height:500px;
+}
+
+.pcform_bottom_left .open_pcform {
+    top:-50px;
+    left:10px;
+}
+.pcform_bottom_right .open_pcform {
+    top: -50px;
+    right: 10px;
+}
+.pcform_right .open_pcform {
+    left:-50px;
+    top:100px;
+}
+.pcform_left .open_pcform {
+    right:-50px;
+    top:100px;
+}
+
+.open_pcform p {
+    white-space:nowrap;
+}
+
+.open_pcform p {
+    white-space: nowrap;
+    margin:0px;
+    padding:0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float:left;
+}
+
+.pcc_titlewrap {
+    width: 360px;
+    height: 50px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    position: absolute;
+    left: -155px;
+    top: 110px;
+    display: inline-block;
+    font-size:24px;
+}
+
+.pcform_right .pcc_titlewrap {
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+}
+
+.pcform_right .open_pcform p {
+    float:right;
+}
+
+.pcform_bottom_left .pcc_titlewrap,
+.pcform_bottom_right .pcc_titlewrap
+{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    position:relative;
+    left:0px;
+    top:0px;
+}
+
+.pcform_bottom_right .pcc_titlewrap,
+.pcform_bottom_right .pcc_titlewrap p
+{
+    float:right;
+}
+
+.pcform_slide {
+    max-height:80vh;
+}
+
+.pcform_slide .pccf {
+    overflow-x:hidden;
+}
+.pcform_slide .slideout_scroll_wrapper {
+    max-height:80vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    font-size:0!important;
+}
+
+.pcform_slide .pccf {
+    font-size:14px!important;
+}
+
+
+/*************** SCROLLBAR BASE CSS ***************/
+.pcform_slide {
+    /*************** SCROLLBAR BASE CSS ***************/
+    /*************** SCROLLBAR MAC OS X ***************/
+    /* scrollbar height/width & offset from container borders */
+    /* update scrollbar offset if both scrolls are visible */
+}
+.pcform_slide .scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+.pcform_slide .scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+.pcform_slide .scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.pcform_slide .scroll-element {
+    display: none;
+}
+.pcform_slide .scroll-element,
+.pcform_slide .scroll-element div {
+    box-sizing: content-box;
+}
+.pcform_slide .scroll-element.scroll-x.scroll-scrollx_visible,
+.pcform_slide .scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+.pcform_slide .scroll-element .scroll-bar,
+.pcform_slide .scroll-element .scroll-arrow {
+    cursor: default;
+}
+.pcform_slide .scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.pcform_slide .scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.pcform_slide .scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.pcform_slide .scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element,
+.pcform_slide .slideout_scroll_wrapper > .scroll-element div {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element .scroll-element_track {
+    display: none;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element .scroll-bar {
+    background-color: #6C6E71;
+    display: block;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+.pcform_slide .slideout_scroll_wrapper:hover > .scroll-element .scroll-bar,
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-draggable .scroll-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-x {
+    bottom: 0px;
+    height: 0px;
+    left: 0;
+    min-width: 100%;
+    display:none!important;
+    width: 100%;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0px;
+    top: 0;
+    width: 0px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-x .scroll-bar {
+    height: 7px;
+    min-width: 10px;
+    top: -9px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-y .scroll-bar {
+    left: -9px;
+    min-height: 10px;
+    width: 7px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-x .scroll-element_outer {
+    left: 2px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-x .scroll-element_size {
+    left: -4px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-y .scroll-element_outer {
+    top: 2px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-y .scroll-element_size {
+    top: -4px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -11px;
+}
+.pcform_slide .slideout_scroll_wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -11px;
+}
+.pcform_slide .form-view.pccformwrapper {
+    margin-bottom:0px!important;
+}
+
+img.pccf-slide-out-close {
+    position: absolute;
+    right: 17px;
+    top: 11px;
+    z-index: 10;
+    width: 16px;
+    opacity: 0.2;
+    cursor:pointer;
+}
+@media(min-width:530px){
+    img.pccf-slide-out-close {
+        display:none;
+    }
+}
+

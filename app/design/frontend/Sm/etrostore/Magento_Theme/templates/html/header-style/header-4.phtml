@@ -1,0 +1,110 @@
+<div class="header-container header-style-4">
+    <div class="header-banner hidden-xs">
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-banner')->toHtml(); ?>
+    </div>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-7 header-topleft language-currency-top">
+                    <!-- STATIC TOP LINK LEFT -->
+                    <div class="topleft-content hiddent-sm">
+                        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('toplink-title')->toHtml(); ?>
+                    </div>
+                    <!-- LANGUAGE -->
+                    <?php echo $block->getChildHtml('language-header'); ?>
+                    <!-- CUNRENTY -->
+                    <?php echo $block->getChildHtml('currency-header'); ?>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-5 header-topright">
+                    <?php echo $block->getChildHtml('toplinks-header'); ?>
+                    <div class="dropdown header-custom-link">
+                        <a class="myaccount-link" href="<?php echo $block->getUrl('customer/account'); ?>" title="<?php echo __('My Account');?>"><?php echo __('My Account');?></a>
+                        <div class="mage-dropdown-dialog">
+                            <ul class="dropdown-list">
+                                <li class="mn-my-order"><a class="myorder-link" href="<?php echo $block->getUrl('sales/order/history'); ?>" title="<?php echo __('My Orders');?>"><?php echo __('My Orders');?></a></li>
+                                <li class="mn-account-information"><a class="account-information" href="<?php echo $block->getUrl('customer/account/edit')?>" title="<?php echo __('Account Information');?>"><?php echo __('Account Information');?></a></li>
+                                <li class="mn-address-book"><a class="address-book" href="<?php echo $block->getUrl('customer/address')?>" title="<?php echo __('Address Book');?>"><?php echo __('Address Book');?></a></li>
+                                <li class="mn-my-credit-cards"><a class="my-credit-cards" href="<?php echo $block->getUrl('vault/cards/listaction')?>" title="<?php echo __('My Credit Cards');?>"><?php echo __('My Credit Cards');?></a></li>
+                                <?php
+                                $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                                $customerSession = $objectManager->get('Magento\Customer\Model\Session');
+                                if($customerSession->isLoggedIn()) { ?>
+                                    <li class="mn-logout"><a class="mn-logout" href="<?php echo $block->getUrl('customer/account/logout')?>" title="<?php echo __('Logout');?>"><?php echo __('Logout');?></a></li>
+                                <?php }else { ?>
+                                    <li class="mn-login popup-login"><a class="mn-login" data-toggle="modal" data-target="#modal-login" title="<?php echo __('Login')?>"><?php echo __('Login')?></a></li>
+                                    <li class="mn-login mn-login-mobile"><a class="mn-login" href="<?php echo $block->getUrl('customer/account/login')?>" title="<?php echo __('Login')?>"><?php echo __('Login')?></a></li>
+                                <?php }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php echo $block->getLayout()->createBlock('Magento\Customer\Block\Form\Login')->setTemplate('Magento_Customer::form/mini.login.phtml')->toHtml();?>
+    <div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 logo-header">
+                    <?php echo $block->getChildHtml('logo-header'); ?>
+                </div>
+
+                <div class="col-lg-6 col-md-5 col-sm-8 header-middle-right">
+                    <div class="middle-right-content">
+                        <div class="searchbox-header">
+                            <?php echo $block->getChildHtml('search-header-pro'); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 header-right header-middle-right">
+                    <div class="wishlist-compare-cart">
+                        <!-- WISHLIST -->
+                        <div class=" sn header-compare">
+                            <a class="fa fa-retweet" href="<?php echo $block->getUrl('catalog/product_compare/index') ?>"></a>
+                            <?php echo $block->getChildHtml('compare-header-link'); ?>
+                        </div>
+                        <!-- COMPARE -->
+                        <div class=" sn header-wishlist">
+                            <a class="fa fa-heart-o" href="<?php echo $block->getUrl('wishlist') ?>"></a>
+                        </div>
+                        <!-- MINI CART -->
+                        <div class="top-minicart">
+                            <div class="middle-right-content">
+                                <div class="minicart-header">
+                                    <div class="minicart-content">
+                                        <?php echo $block->getChildHtml('cart-header'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="menu-larger">
+                <div class="row">
+                    <div class="navigation-mobile-container">
+                        <?php echo $block->getChildHtml('navigation.mobile'); ?>
+                    </div>
+                    <div class="col-lg-12 col-md-12 main-megamenu">
+                        <?php
+                        echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('vertical-menu-config')->toHtml();
+                        if($_config->getGeneral('menu_style') == 'megamenu'){
+                            echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('megamenu-horizontal')->toHtml();
+                        } else {
+                            echo $block->getChildHtml('navigation-header');
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

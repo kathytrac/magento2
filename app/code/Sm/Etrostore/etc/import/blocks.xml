@@ -1,0 +1,1372 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_item>
+      <title>EtroStore - Block Footer About</title>
+      <identifier>footer-about</identifier>
+      <content><![CDATA[<div class="footer-about">
+   <img src="{{media url="wysiwyg/footer/logo-footer.png"}}" alt="img" />
+     <p>Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus. Congue eget dapibus congue tincidunt senectus nibh risus Morbi at ligula porta, vulputate nulla vitae, accumsan sapien. Maecenas molestie maximus varius. Aliquam blandit rhoncus...</p>
+     <a class="footer-button-buy font-etro" href="#">Buy this theme</a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Box Footer Out Shop</title>
+      <identifier>footer-out-shop</identifier>
+      <content><![CDATA[<div class="footer-our-shop">
+     <span class="footer-title">OUR SHOPS</span>
+     <ul class="footer-content">
+             <li><a title="Product Support" href="#">Product Support</a></li>
+             <li><a title="PC Setup & Support Services" href="#">PC Setup & Support Services</a></li>
+             <li><a title="Extended Service Plans" href="#">Extended Service Plans</a></li>
+             <li><a title="Community" href="#">Community</a></li>
+             <li><a title="Product Manuals" href="#">Product Manuals</a></li>
+             <li><a title="Product Registration" href="#">Product Registration</a></li>
+     </ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Box Footer Orders</title>
+      <identifier>footer-orders</identifier>
+      <content><![CDATA[<div class="footer-orders"><span class="footer-title">ORDERS</span>
+<ul class="footer-content">
+<li><a title="My account" href="{{config path="web/unsecure/base_url"}}customer/account/">My account</a></li>
+<li><a title="Order Tracking" href="#">Order Tracking</a></li>
+<li><a title="Watch List" href="#">Watch List</a></li>
+<li><a title="Customer Service" href="#">Customer Service</a></li>
+<li><a title="Returns Exchanges" href="#">Returns / Exchanges</a></li>
+<li><a title="FAQs" href="#">FAQs</a></li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Box Footer Contact Info</title>
+      <identifier>footer-contact-info</identifier>
+      <content><![CDATA[<div class="footer-contact-info">
+    <span class="footer-title">CONTACT INFO</span>
+	<div class="footer-contact-content">
+		<p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></p>
+		<p class="address"><span>No 1123, Marmora Road, Glasgow, D04 89GR.</span></p>
+		<p class="phone"><span><a href="tel:80123456788" title="Call: (801) 2345 - 6788">(801) 2345 - 6788</a>/<a href="tel:80123456789" title="Call: (801) 2345 - 6789">(801) 2345 - 6789</a></span></p>
+		<p class="email"><a title="Mail to: support@etrostore.com" href="mailto:name@email.com"><span>support@etrostore.com</span></a></p>
+	 </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Footer Link</title>
+      <identifier>footer-link</identifier>
+      <content><![CDATA[<ul class="text-center">
+<li class="bor-link"><a href="{{config path="web/unsecure/base_url"}}about-us.html">About Us</a></li>
+<li class="bor-link"><a href="#">Customer Service</a></li>
+<li class="bor-link"><a href="#">Privacy Policy</a></li>
+<li class="bor-link"><a href="#">Site Map</a></li>
+<li class="bor-link"><a href="#">Orders and Returns</a></li>
+<li><a href="{{config path="web/unsecure/base_url"}}contact-us.html">Contact Us</a></li>
+</ul>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Box Footer Payment</title>
+      <identifier>payment-footer</identifier>
+      <content><![CDATA[<div class="payment">
+	<img src="{{media url="wysiwyg/footer/payment.png"}}" alt="payment" />
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - About Us Page</title>
+      <identifier>about-us-page</identifier>
+      <content><![CDATA[<div class="about-us about-demo-1">
+	<div class="row">
+		<div class="col-lg-5 col-md-5 about-image">
+			<img src="{{media url="wysiwyg/about-us-page/about-us.jpg"}}" alt="About Us" />
+		</div>
+		
+		<div class="col-lg-7 col-md-7 about-info">
+			<h2 class="about-title">About Us</h2>
+			<div class="about-text">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 what-client-say">
+			<div class="client-say-content">
+				<h2 class="about-title">What Clients Say</h2>
+				
+				<div class="client-say-slider">
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var client_say_slider = $(".client-say-slider");
+						client_say_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:1
+								},
+								768:{
+									items:1
+								},
+								992:{
+									items:1
+								},
+								1200:{
+									items:1
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : false,
+							dots: true,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 our-team">
+			<div class="our-team-content">
+				<h2 class="about-title">Our Team</h2>
+				
+				<div class="our-team-slider">
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-2.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-3.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-4.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var our_team_slider = $(".our-team-slider");
+						our_team_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:2
+								},
+								768:{
+									items:3
+								},
+								992:{
+									items:3
+								},
+								1200:{
+									items:4
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : true,
+							dots: false,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Contact Us Page</title>
+      <identifier>contact-us-page</identifier>
+      <content><![CDATA[<div class="contact-us contact-demo-1">
+	<div class="title-contact">
+		<h2>Contact Us</h2>
+	</div>
+	
+	<div class="google-map">
+		{{block class="Magento\\Cms\\Block\\Block" block_id="contact-googlemap"}}
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+				<div class="title-contact-normal">
+					<h2>About Us</h2>
+				</div>	
+				
+					<div class="contact-content">
+						<p class="contact-description">
+							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam<br>
+							Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat sed do eiusmod tempor incididunt ut labore dolore
+						</p>
+						
+						<ul class="address-info">
+							<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+							<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+							<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+						</ul>
+						
+						<ul class="social-list">
+							<li><a class="icon-social fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+							<li><a class="icon-social fa fa fa-google-plus" href="#" title="Google"><span>Google</span></a></li>
+							<li><a class="icon-social fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+							<li><a class="icon-social fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+							<li><a class="icon-social fa fa fa-youtube" href="#" title="Youtube"><span>Youtube</span></a></li>
+						</ul>
+					</div>
+				
+			</div>
+		</div>
+		
+		<div class="col-lg-8 col-md-8">
+			<div class="contact-form">
+				<div class="request-form">
+					{{block class="Magento\Contact\Block\ContactForm" template="Magento_Contact::form-contact.phtml"}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Theme - Google Map</title>
+      <identifier>contact-googlemap</identifier>
+      <content><![CDATA[<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript" xml="space"></script>
+<div id="map">&nbsp;</div>
+<script type="text/javascript">
+var myOptions = {
+         zoom: 15,
+         scrollwheel: false,
+         center: new google.maps.LatLng(48.89364,2.33739), 	
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+
+      var map = new google.maps.Map(document.getElementById("map"), myOptions);
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Product Megamenu Men</title>
+      <identifier>product-megamenu</identifier>
+      <content><![CDATA[<div class="product-megamenu">{{block class="Sm\BasicProducts\Block\BasicProducts" template="Sm_BasicProducts::product-megamenu.phtml" title="" product_category="98" product_limitation="1" <span>img_width="410" &nbsp;<span>img_height="410"</span></span>}}</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Product Sidebar</title>
+      <identifier>product-sidebar</identifier>
+      <content><![CDATA[<p>{{block class="Sm\BasicProducts\Block\BasicProducts" template="Sm_BasicProducts::sidebar-product.phtml" title="<span>BEST SELLERS</span>" product_limitation="3" img_width="100" img_height="100" product_addcart_display="0" product_addwishlist_display="0" product_addcompare_display="0"}}</p>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Megamenu Horizontal</title>
+      <identifier>megamenu-horizontal</identifier>
+      <content><![CDATA[{{block class="Sm\MegaMenu\Block\MegaMenu\View" template="Sm_MegaMenu::megamenu-horizontal.phtml" theme="1" group_id="2"}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Image Sidebar</title>
+      <identifier>image-sidebar</identifier>
+      <content><![CDATA[<div class="wow fadeInUp">
+<div class="static-image-sidebar style-effect hidden-sm" style="margin: 60px 0 30px;"><a title="Static Image" href="#"><img src="{{media url="wysiwyg/sidebar/img-sidebar.jpg"}}" alt="Static Image" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore- Latest Blog Index 4</title>
+      <identifier>latest-blog-h4</identifier>
+      <content><![CDATA[<div class="slider-latest-blog">
+<div class="title-home">
+<h2 class="font-etro">Latest from the blog</h2>
+<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</span></div>
+<div class="slider-blog latest-post">
+<div class="item">
+<div class="blog-item-content"><!-- TIME -->
+<div class="info-post">
+<ul>
+<li class="date"><span class="d-month">Aug </span> <span class="d-day">16, </span> <span class="d-year">2015</span></li>
+<li class="comment"><span class="coment-wr"><a href="#">11 </a></span>Comment(s)</li>
+</ul>
+</div>
+<h2 class="postTitle font-etro"><a href="#">Nemo enim ipsam voluptatem quia voluptas sit</a></h2>
+<div class="image-blog"><a class="img-link banner-sn" title="Nemo enim ipsam voluptatem quia  voluptas sit" href="#"><img src="{{media url="wysiwyg/blog/blog-1.jpg"}}" alt="Image Blog" /></a></div>
+<div class="info-blog">
+<div class="postContent">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis is...</div>
+<div class="action-post"><a class="btn-readmore font-etro" title="Read more" href="#">Read more</a></div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-item-content"><!-- TIME -->
+<div class="info-post">
+<ul>
+<li class="date"><span class="d-month">Aug </span> <span class="d-day">16, </span> <span class="d-year">2015</span></li>
+<li class="comment"><span class="coment-wr"><a href="#">4 </a></span>Comment(s)</li>
+</ul>
+</div>
+<h2 class="postTitle font-etro"><a href="#">Ut nonummy rutrum turpis nemo enim ipsam voluptatem</a></h2>
+<div class="image-blog"><a class="img-link banner-sn" title="Ut nonummy rutrum turpis nemo enim ipsam voluptatem" href="#"><img src="{{media url="wysiwyg/blog/blog-2.jpg"}}" alt="Image Blog" /></a></div>
+<div class="info-blog">
+<div class="postContent">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis is...</div>
+<div class="action-post"><a class="btn-readmore font-etro" title="Read more" href="#">Read more</a></div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-item-content"><!-- TIME -->
+<div class="info-post">
+<ul>
+<li class="date"><span class="d-month">Aug </span> <span class="d-day">16, </span> <span class="d-year">2015</span></li>
+<li class="comment"><span class="coment-wr"><a href="#">2 </a></span>Comment(s)</li>
+</ul>
+</div>
+<h2 class="postTitle font-etro"><a href="#">Pellentesque orci lacus commodon emo enim ipsam quia</a></h2>
+<div class="image-blog"><a class="img-link banner-sn" title="Pellentesque orci lacus commodon emo enim ipsam  quia" href="#"><img src="{{media url="wysiwyg/blog/blog-3.jpg"}}" alt="Image Blog" /></a></div>
+<div class="info-blog">
+<div class="postContent">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis is...</div>
+<div class="action-post"><a class="btn-readmore font-etro" title="Read more" href="#">Read more</a></div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-item-content"><!-- TIME -->
+<div class="info-post">
+<ul>
+<li class="date"><span class="d-month">Aug </span> <span class="d-day">16, </span> <span class="d-year">2015</span></li>
+<li class="comment"><span class="coment-wr"><a href="#">3 </a></span>Comment(s)</li>
+</ul>
+</div>
+<h2 class="postTitle font-etro"><a href="#">Morbi in turpis vel ante feugiat nemo enim ipsam</a></h2>
+<div class="image-blog"><a class="img-link banner-sn" title="Morbi in turpis vel ante feugiat nemo enim ipsam" href="#"><img src="{{media url="wysiwyg/blog/blog-4.jpg"}}" alt="Image Blog" /></a></div>
+<div class="info-blog">
+<div class="postContent">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis is...</div>
+<div class="action-post"><a class="btn-readmore font-etro" title="Read more" href="#">Read more</a></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		var post_slider = $(".slider-blog");
+		post_slider.owlCarousel({				
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:2
+				},
+				992:{
+					items:2
+				},
+				1200:{
+					items:4
+				}
+			},
+			autoplay:false,
+			loop:false,
+			nav : true,
+			dots: false,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:30,
+		});	  
+	});	
+</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Image Sidebar Detail</title>
+      <identifier>image-sidebar-detail</identifier>
+      <content><![CDATA[<div class="wow fadeInUp">
+<div class="static-image-sidebar style-effect hidden-sm"><a title="Static Image" href="#"><img src="{{media url="wysiwyg/sidebar/img-sidebar.jpg"}}" alt="Static Image" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Clients Say</title>
+      <identifier>block-client-say</identifier>
+      <content><![CDATA[<div class="client-say-wrapper">
+<div class="border-block">
+<div class="content-client-say">
+<div class="slider-client">
+<div class="item">
+<div class="row">
+<div class="col-lg-6 col-sm-6 col-md-6 info-all clien-margin">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">Congue eget dapibus Nullam elit id ut elit feugiat lacus.Nulla lorem congue tincidunt senectus...</div>
+<div class="name-client"><strong class="put-name font-etro">John doe</strong><span>Admin, Web Designer</span></div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6  info-all">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-2.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus. Congue eget dapibus congue tincidunt senectus..."</div>
+<div class="name-client"><strong class="put-name font-etro">Hau VC</strong><span>Ceo, Company Inc.</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="row">
+<div class="col-lg-6 col-sm-6 col-md-6  info-all clien-margin">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-3.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">Congue eget dapibus Nullam elit id ut elit feugiat lacus. Nulla lorem congue tincidunt senectus....</div>
+<div class="name-client"><strong class="put-name font-etro">Quyen NV</strong><span>Leader, Company Inc.</span></div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6  info-all">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-1.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">"Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus. Congue eget dapibus congue tincidunt senectus...</div>
+<div class="name-client"><strong class="put-name font-etro">John doe</strong><span>Admin, Web Designer</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="row">
+<div class="col-lg-6 col-sm-6 col-md-6 info-all clien-margin">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-5.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">Congue eget dapibus Nullam elit id ut elit feugiat lacus.Nulla lorem congue tincidunt senectus...</div>
+<div class="name-client"><strong class="put-name font-etro">Cuong TD</strong><span>Develop, Web Designer</span></div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6  info-all">
+<div class="image-client"><img src="{{media url="wysiwyg/testimonial/client-4.png"}}" alt="Client" /></div>
+<div class="info-client">
+<div class="des-client">Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus. Congue eget dapibus congue tincidunt senectus..."</div>
+<div class="name-client"><strong class="put-name font-etro">Ngan Nt</strong><span>Develop, Web Designer</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+jQuery(document).ready(function($) {
+					var client_slider = $(".slider-client");
+					client_slider.owlCarousel({				
+						items:1,
+						mouseDrag: false,
+						startPosition: 1,
+						animateOut: 'fadeOut',
+						animateIn: 'fadeIn',
+						autoplay:false,
+						loop:true,
+						nav : true,
+						dots: false,
+						autoplaySpeed : 500,
+						navSpeed : 500,
+						dotsSpeed : 500,
+						autoplayHoverPause: true,
+						margin:50,
+					});	  
+				});	
+</script>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Box Footer Bottom Support</title>
+      <identifier>footer-bottom-support</identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-6">
+<div class="icon-sp"></div>
+<div class="content-sp"><a class="font-etro" href="#"><strong>Money Back Guarantee</strong></a><br /> <span>30 Days Money Back</span></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 box-footer-sp">
+<div class="icon-sp"></div>
+<div class="content-sp"><a class="font-etro" href="#"><strong>Free Worldwide Shipping</strong></a><br /> <span>On Order Over $100</span></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 box-footer-sp">
+<div class="icon-sp"></div>
+<div class="content-sp"><a class="font-etro" href="#"><strong>Member Discount</strong></a><br /> <span>Up to 70 % Discount</span></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 box-footer-sp">
+<div class="icon-sp"></div>
+<div class="content-sp"><a class="font-etro" href="#"><strong>24/7 Online Support</strong></a><br /> <span>24/7 Technical Support</span></div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Top Link Title</title>
+      <identifier>toplink-title</identifier>
+      <content><![CDATA[<div class="toplink-title">
+	<span>Call Us Now:</span><p><a href="tel:0123-444-666" title="Call: 0123-444-666">0123-444-666</a></p>
+</div>
+]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Services Home 1</title>
+      <identifier>block-services-home1</identifier>
+      <content><![CDATA[<div class="block-services">
+	<div class="rows">
+		<div class="col-lg-4 col-md-4 col-sm-4 put-pading put-pading1">
+			<div class="services-img img-box1">
+			</div>
+			<div class="services-info font-etro">
+				<span><strong>Free shipping on orders over $300</strong></span>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 put-pading put-pading2">
+			<div class="services-img img-box2">
+			</div>
+			<div class="services-info font-etro">
+				<span><strong>30-day returns moneyback guarantee</strong></span>
+			</div>	
+		</div>
+		
+		<div class="col-lg-4 col-md-4  col-sm-4 put-pading put-pading3">
+			<div class="services-img img-box3">
+			</div>
+			<div class="services-info font-etro">
+				<span><strong>24/7 support online consultations</strong></span>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore - Vertical menu config</title>
+      <identifier>vertical-menu-config</identifier>
+      <content><![CDATA[{{block class="Sm\MegaMenu\Block\MegaMenu\View" template="Sm_MegaMenu::megamenu.phtml" theme="2" group_id="1" title="Category"}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Banner Slide Bottom</title>
+      <identifier>banner-slide-bottom</identifier>
+      <content><![CDATA[<div class="block-baner-bottom">
+	<ul>
+		<li class="padding-img1 style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/03.jpg"}}" alt="img" /></a></li>
+		<li class="padding-img2 style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/04.jpg"}}" alt="img" /></a></li>
+		<li class="padding-img3 style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/05.jpg"}}" alt="img" /></a></li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Banner Slide Right</title>
+      <identifier>banner-slide-right</identifier>
+      <content><![CDATA[<div class="block-baner-left">
+	<ul>
+		<li class="style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/01.jpg"}}" alt="img" /></a></li>
+		<li class="style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/02.jpg"}}" alt="img" /></a></li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Deal Home 3</title>
+      <identifier>block-img-deal</identifier>
+      <content><![CDATA[<div class="box-img-deal">
+	<div class="col-lg-3 col-md-3  col-sm-3 no-padding">
+		<div class="style-effect">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/5.jpg"}}" alt="img-5" /></a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 no-padding">
+		<div class="style-effect">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/6.jpg"}}" alt="img-6" /></a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 no-padding">
+		<div class="style-effect">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/7.jpg"}}" alt="img-7" /></a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 no-padding">
+		<div class="style-effect">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/8.jpg"}}" alt="img-8" /></a>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block BG Supper 1 Home 2</title>
+      <identifier>block-bg-supper-1</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class="img-1">
+                <a href="#" title="img"></a>
+		<div class="box-brand">
+			<div class="title-brand font-etro">
+				<h2>TOP BRANDS</h2>
+			</div>
+			<div class="content-brand">
+				<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home2/img-brand.jpg"}}" alt="img-brand" /></a>
+			</div>
+		</div>
+	</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate 1 Home 5</title>
+      <identifier>block-img-cate1-home5</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1">
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/1.jpg"}}" alt="img-cat1" /></a>
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/2.jpg"}}" alt="img-cat1" /></a>
+       </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate 2 Home 5</title>
+      <identifier>block-img-cate2-home5</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1">
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/3.jpg"}}" alt="img-cat3" /></a>
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/4.jpg"}}" alt="img-cat4" /></a>
+       </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore Block IMG Cate3 Home 5</title>
+      <identifier>block-img-cate3-home5</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1">
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/5.jpg"}}" alt="img-cat5" /></a>
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/6.jpg"}}" alt="img-cat6" /></a>
+       </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate 4 Home 5</title>
+      <identifier>block-img-cate4-home5</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1">
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/7.jpg"}}" alt="img-cat7" /></a>
+            <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/8.jpg"}}" alt="img-cat8" /></a>
+       </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Joi Our</title>
+      <identifier>block-joi-our</identifier>
+      <content><![CDATA[<div class="box-joi-our">
+	<div class="info-img">
+		<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-joi.jpg"}}" alt="img-joi" /></a>
+	</div>
+	<div class="info-button">
+		<a href="#"><img src="{{media url="wysiwyg/static-img/home1/img-ios.png"}}" alt="img-ios" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/static-img/home1/img-androi.png"}}" alt="img-androi" /></a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Content Home 5</title>
+      <identifier>block-bn</identifier>
+      <content><![CDATA[<div class="box-banner-bottom style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home5/9.jpg"}}" alt="img9" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Listingtab Custom Home5</title>
+      <identifier>block-listingtab-custom</identifier>
+      <content><![CDATA[{{block class="Sm\ListingTabs\Block\ListingTabs" name="listingtabs.default" as="listingtabs_default" template="Sm_ListingTabs::default_list.phtml" 
+      nbi_column1="1"
+      nbi_column2="1"
+      nbi_column3="1"
+      nbi_column4="1"
+      product_limitation="9"
+      filter_type="categories"
+      product_category="188,197,198,199"
+	  category_preload="197"
+}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore Social Detail</title>
+      <identifier>social-detail</identifier>
+      <content><![CDATA[<div class="social-catalog">
+	<div class="socials-wrap">
+	<div class="footer-title font-etro">
+		share
+	</div>
+	
+	<ul>
+			<li class="li-social facebook-social">
+			
+				<a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-565e9a737fd607e2&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank">
+					<span class="fa fa-facebook icon-social"></span>
+				</a>
+
+			</li>
+		
+
+			<li class="li-social twitter-social">
+			
+				<a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-565e9a737fd607e2&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank">
+					<span class="fa fa-twitter icon-social"></span>
+				</a>
+			</li>
+
+		
+
+			<li class="li-social google-social">
+				
+				<a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-565e9a737fd607e2&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank">
+					<span class="fa fa-google-plus icon-social"></span>
+				</a>
+			</li>
+
+
+			<li class="li-social linkedin-social">
+		
+				<a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-565e9a737fd607e2&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank">
+					<span class="fa fa-linkedin icon-social"></span>
+				</a>
+			</li>
+
+		
+		
+
+			<li class="li-social flickr-social">
+
+				<a href="https://api.addthis.com/oexchange/0.8/forward/flipboard/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-565e9a737fd607e2&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank">
+					<span class="fa fa-flickr icon-social"></span>
+				</a>
+
+			</li>
+
+	</ul>
+</div>    
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore Product sidebar</title>
+      <identifier>product-sidebar-detail</identifier>
+      <content><![CDATA[{{block class="Sm\BasicProducts\Block\BasicProducts" template="Sm_BasicProducts::sidebar-product.phtml" title="BEST SELLERS" product_limitation="4" img_width="100" img_height="100" product_addcart_display="0" product_addwishlist_display="0" product_addcompare_display="0"}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Megamenu Detail</title>
+      <identifier>megamenu-detail</identifier>
+      <content><![CDATA[<p>{{block class="Sm\MegaMenu\Block\MegaMenu\View" template="Sm_MegaMenu::megamenu-detail-vertical.phtml" theme="2" group_id="1" title="Category"}}</p>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Content 1</title>
+      <identifier>block-img-content-1</identifier>
+      <content><![CDATA[<div class="row">
+	<div class="col-lg-4 col-md-4">
+		<div class="box-banner-left">
+			<ul>
+				<li class="style-effect"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/img1.jpg"}}" alt="img1" /></a></li>
+				<li class="style-effect"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/img2.jpg"}}" alt="img2" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-4 hidden-sm">
+		<div class="box-banner-center style-effect">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img3.jpg"}}" alt="img1" /></a>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-4 hidden-sm">
+		<div class="box-banner-right">
+			<ul>
+				<li class="style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img4.jpg"}}" alt="img4" /></a></li>
+				<li class="style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img5.jpg"}}" alt="img5" /></a></li>
+			</ul>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Slider Img 2</title>
+      <identifier>block-slider-img2</identifier>
+      <content><![CDATA[<div class="slider-img">
+	<div class="item">
+		<div class="image-sl">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide2-3.jpg"}}" alt="img-slide1" /></a>
+		</div>
+		<div class="info-content">
+			<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+			<span>Clean bubbles penetrate deeper into clothes</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="image-sl">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide2-2.jpg"}}" alt="img-slide2" /></a>
+		</div>
+		<div class="info-content">
+			<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+			<span>Clean bubbles penetrate deeper into clothes</span>
+		</div>
+	</div>
+	<div class="item">
+		<div class="image-sl">
+			<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide2.jpg"}}" alt="img-slide3" /></a>
+		</div>
+		<div class="info-content">
+			<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+			<span>Clean bubbles penetrate deeper into clothes</span>
+		</div>
+	</div>
+</div>
+
+<script>
+	jQuery(document).ready(function($) {
+		var img_slider = $(".slider-img");
+		img_slider.owlCarousel({				
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			},
+			autoplay:true,
+			loop:true,
+			nav : true,
+			dots: true,
+			autoplaySpeed : 900,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+		});	  
+	});	
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Banner 2 Home 2</title>
+      <identifier>block-bn-2</identifier>
+      <content><![CDATA[<div class="box-bn-1 style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home2/img-bn-2.jpg"}}" alt="img1" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Bottom</title>
+      <identifier>block-img-bottom</identifier>
+      <content><![CDATA[<div class="box-banner-bottom style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-bottom.jpg"}}" alt="img1" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Slider Img 1</title>
+      <identifier>block-slider-img1</identifier>
+      <content><![CDATA[<div class="slider-img">
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide1.jpg"}}" alt="img-slide1" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide1-2.jpg"}}" alt="img-slide2" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide1-3.jpg"}}" alt="img-slide3" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		var img_slider = $(".slider-img");
+		img_slider.owlCarousel({				
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			},
+			autoplay:true,
+			loop:true,
+			nav : true,
+			dots: true,
+			autoplaySpeed : 700,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+		});	  
+	});
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Slider Img 3</title>
+      <identifier>block-slider-img3</identifier>
+      <content><![CDATA[<div class="slider-img">
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide3-3.jpg"}}" alt="img-slide1" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide3-2.jpg"}}" alt="img-slide2" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide3.jpg"}}" alt="img-slide3" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		var img_slider = $(".slider-img");
+		img_slider.owlCarousel({				
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			},
+			autoplay:true,
+			loop:true,
+			nav : true,
+			dots: true,
+			autoplaySpeed : 1100,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+		});	  
+	});	
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Slider Img 4</title>
+      <identifier>block-slider-img4</identifier>
+      <content><![CDATA[<div class="slider-img">
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide4.jpg"}}" alt="img-slide1" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide4-2.jpg"}}" alt="img-slide2" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+<div class="item">
+<div class="image-sl"><a title="img" href="#"><img src="{{media url="wysiwyg/static-img/home1/slide-img/img-slide4-3.jpg"}}" alt="img-slide3" /></a></div>
+<div class="info-content">
+<h2 class="font-etro">WASH SMART, SAVE ENERGY</h2>
+<span>Clean bubbles penetrate deeper into clothes</span></div>
+</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		var img_slider = $(".slider-img");
+		img_slider.owlCarousel({				
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			},
+			autoplay:true,
+			loop:true,
+			nav : true,
+			dots: true,
+			autoplaySpeed : 800,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+		});	  
+	});	
+</script>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Banner 1 Home 2</title>
+      <identifier>block-bn-1</identifier>
+      <content><![CDATA[<div class="box-bn-1 style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home2/img-bn-1.jpg"}}" alt="img1" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Header Banner</title>
+      <identifier>header-banner</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/img-header.jpg"}}" alt="img-cat3" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Top 1 Home 3</title>
+      <identifier>block-img-top-1</identifier>
+      <content><![CDATA[<div class="box-img-slide">
+	<div class="img-1">
+		<div class="img-1-margin style-effect"> <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/1.jpg"}}" alt="img-1" /></a></div> 
+		<div class=" style-effect"> <a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/2.jpg"}}" alt="img-2" /></a></div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Top 2 Home 3</title>
+      <identifier>block-img-top-2</identifier>
+      <content><![CDATA[<div class="box-img-slide2">
+	<div class="img-1">
+		<div class="img-1-margin style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/3.jpg"}}" alt="img-1" /></a></div>
+		<div class="style-effect"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/4.jpg"}}" alt="img-2" /></a></div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Banner 2 Home 3</title>
+      <identifier>block-bn-2-home3</identifier>
+      <content><![CDATA[<div class="box-bn-1 style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/img-bn-2.jpg"}}" alt="img1" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Banner 3 Home 3</title>
+      <identifier>block-bn-3-home3</identifier>
+      <content><![CDATA[<div class="box-bn-1 style-effect">
+	<a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home3/img-bn-3.jpg"}}" alt="img1" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Etrostore Block Welcome</title>
+      <identifier>block-welcome</identifier>
+      <content><![CDATA[<div class="static-block-welcome">
+	<div class="title-home">
+		<h2 class="font-etro">Welcome To etro store</h2>
+	<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi <br> enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. Lorem ipsum dolor sit amet, consectetuer<br>
+	adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block Joi Our Home 4</title>
+      <identifier>block-joi-our-home4</identifier>
+      <content><![CDATA[<div class="box-joi-our">
+	<div class="info-joi">
+		<div class="info-title font-etro">
+			<h2>Join Our Family</h2>
+		</div>
+		<div class="info-contetn">
+			<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. </span>
+		</div>
+		
+	</div>
+	<div class="info-button">
+		<a href="#"><img src="{{media url="wysiwyg/static-img/home1/img-ios.png"}}" alt="img-ios" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/static-img/home1/img-androi.png"}}" alt="img-androi" /></a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate1</title>
+      <identifier>block-img-cate1</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-cat1.jpg"}}" alt="img-cat1" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate2</title>
+      <identifier>block-img-cate2</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-cat2.jpg"}}" alt="img-cat2" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate3</title>
+      <identifier>block-img-cate3</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-cat3.jpg"}}" alt="img-cat3" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>EtroStore - Block IMG Cate 4</title>
+      <identifier>block-img-cate4</identifier>
+      <content><![CDATA[<div class="box-img-cat">
+	<div class=" img-1"><a href="#" title="img"><img src="{{media url="wysiwyg/static-img/home1/img-cat4.jpg"}}" alt="img-cat3" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+  </blocks>
+</root>

@@ -1,0 +1,272 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Super Categories - Version 2.1.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+$helper = $this->_helper();
+if ($this->_isAjax()) {
+    $catid = $this->getRequest()->getPost('categoryid');
+    $start = (int)$this->getRequest()->getPost('ajax_reslisting_start');
+    $list = $this->getListCriterionFilter($catid);
+    $child_items = $list[$catid]['child'];
+    $tag_id = $this->getRequest()->getPost('super_categories_moduleid');
+}
+
+if (!empty($child_items)) {
+    $j = $this->getRequest()->getPost('ajax_reslisting_start', 0);
+    $i = 0;
+    $count = count($child_items);
+    $nbi_type_show = $this->_getConfig('nbi_type_show', 'loadmore');
+    $nbi_rows = $this->_getConfig('nbi_rows', 1);
+    if ($nbi_type_show == 'slider') {
+        echo '<div class="super-items-inner owl2-carousel spctabs-slider ">';
+    }
+    foreach ($child_items as $_product) {
+        $i++;$j++; ?>
+        <?php if($nbi_type_show == 'slider' && ($i % $nbi_rows == 1 || $nbi_rows == 1)) { ?>
+            <div class="spctabs-item">
+        <?php } ?>
+        <?php if ($nbi_type_show == 'loadmore'){ ?>
+        <?php if($i == 1) : ?>
+            <div class="group-4 col-lg-8 col-sm-8 no-padding">
+        <?php endif; ?>
+        <?php if($i == 5) : ?>
+        <div class="group-3 col-lg-4 col-sm-4 no-padding">
+            <?php endif; ?>
+        <div class="spc-item new-spc-item item">
+    <?php } ?>
+        <div class="item-inner">
+
+            <!-- Begin spc-content -->
+            <div class="box-info">
+
+                <!--LABEL PRODUCT-->
+
+                <?php
+                $specialprice = $_product->getSpecialPrice();
+                $specialPriceFromDate = $_product->getSpecialFromDate();
+                $specialPriceToDate = $_product->getSpecialToDate();
+
+                $today = time();
+
+                if ($specialprice) {
+                    if ($today >= strtotime($specialPriceFromDate) && $today <= strtotime($specialPriceToDate) || $today >= strtotime($specialPriceFromDate) && is_null($specialPriceToDate)) { ?>
+                        <div class="label-product label-sale">
+									<span class="sale-product-icon">
+                                        <?php
+                                        $saleof = abs(($specialprice / ($_product->getPrice())) * 100 - 100);
+                                        print_r('-' . floor($saleof) . '%');
+                                        ?>
+									</span>
+                        </div>
+                    <?php }
+                }
+                ?>
+
+                <?php
+                $now = date("Y-m-d");
+                $newsFrom = substr($_product->getNewsFromDate(), 0, 10);
+                $newsTo = substr($_product->getNewsToDate(), 0, 10);
+
+                if ($newsTo != '' || $newsFrom != '') {
+                    if (($newsTo != '' && $newsFrom != '' && $now >= $newsFrom && $now <= $newsTo) || ($newsTo == '' && $now >= $newsFrom) || ($newsFrom == '' && $now <= $newsTo)) {?>
+                        <div class="label-product label-new">
+                            <span class="new-product-icon"><?php echo __('New'); ?></span>
+                        </div>
+                    <?php }
+                } ?>
+
+                <!--END LABEL PRODUCT-->
+
+                <?php if ((int)$this->_getConfig('product_reviews_count', 1)) { ?>
+                    <div class="spc-review">
+                        <?php
+                        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+                        echo $block->getReviewsSummaryHtml($_product,$templateType);
+                        ?>
+                    </div>
+                <?php } ?>
+
+                <?php if ((int)$this->_getConfig('product_title_display', 1)) { ?>
+                    <div class="product-name">
+                        <a href="<?php echo $_product->link; ?>" title="<?php echo $_product->title; ?>"
+                            <?php echo $helper->parseTarget($this->_getConfig('target')); ?>
+                            >
+                            <?php echo $helper->truncate($_product->title, $this->_getConfig('product_title_maxlength')); ?>
+                        </a>
+                    </div>
+                <?php } ?>
+
+                <?php if ($this->_getConfig('product_description_display') == 1 && $helper->_trimEncode($_product->_description)) { ?>
+                    <div class="spc-description">
+                        <?php echo $_product->_description; ?>
+                    </div>
+                <?php } ?>
+
+                <?php if ($this->_getConfig('product_source') != 'media') { ?>
+                    <?php if ((int)$this->_getConfig('product_price_display', 1)) { ?>
+                        <div class="price-box">
+                            <div class="sale-price">
+                                <?php echo $this->getProductPrice($_product); ?>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                <?php } ?>
+
+                <?php if ($this->_getConfig('product_readmore_display') == 1) { ?>
+                    <div class="spc-detail">
+                        <a href="<?php echo $_product->link ?>"
+                           title="<?php echo $_product->title; ?>"
+                            <?php echo $helper->parseTarget($this->_getConfig('target')); ?>
+                            >
+                            <?php echo $this->_getConfig('product_readmore_text', 'Details'); ?>
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
+
+            <?php if ($_product->_image) { ?>
+                <div class="box-image">
+                    <a href="<?php echo $_product->link ?>"
+                       title="<?php echo $_product->title; ?>"
+                        <?php echo $helper->parseTarget($this->_getConfig('target')); ?>
+                        >
+                        <img src="<?php echo $_product->_image; ?>"
+                             title="<?php echo $_product->title; ?>"
+                             alt="<?php echo $_product->title; ?>" >
+                    </a>
+
+                </div>
+            <?php }?>
+
+            <?php if ((int)$this->_getConfig('product_addcart_display', 1) ||(int)$this->_getConfig('product_addwishlist_display', 1) || (int)$this->_getConfig('product_addcompare_display', 1)) { ?>
+
+                <div class="bottom-action">
+                    <a style="display: none;" href="<?php echo $_product->link;?>">&nbsp;</a>
+
+                        <?php if ((int)$this->_getConfig('product_addcart_display', 1)) { ?>
+                            <?php if ($_product->isSaleable()): ?>
+                                <?php $postParams = $block->getAddToCartPostParams($_product); ?>
+                                <form data-role="tocart-form" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post">
+                                    <input type="hidden" name="product" value="<?php /* @escapeNotVerified */ echo $postParams['data']['product']; ?>">
+                                    <input type="hidden" name="<?php /* @escapeNotVerified */ echo \Magento\Framework\App\ActionInterface::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data'][\Magento\Framework\App\ActionInterface::PARAM_NAME_URL_ENCODED]; ?>">
+                                    <?php echo $block->getBlockHtml('formkey')?>
+                                    <button type="submit"
+                                            title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>"
+                                            data-toggle="tooltip" data-placement="top"
+                                            class="action tocart primary btn-action btn-cart">
+                                        <span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+                                    </button>
+                                </form>
+                            <?php else: ?>
+                                <?php if ($_product->getIsSalable()): ?>
+                                    <div class="stock available"><span><?php /* @escapeNotVerified */ echo __('In stock') ?></span></div>
+                                <?php else: ?>
+                                    <div class="stock unavailable"><span><?php /* @escapeNotVerified */ echo __('Out of stock') ?></span></div>
+                                <?php endif; ?>
+                            <?php endif; ?>
+                        <?php } ?>
+
+                        <?php if ((int)$this->_getConfig('product_addwishlist_display', 1) || (int)$this->_getConfig('product_addcompare_display', 1)) { ?>
+                            <?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && (int)$this->_getConfig('product_addwishlist_display', 1) ){ ?>
+                                <a href="#" data-post='<?php  echo $block->getAddToWishlistParams($_product); ?>'  class="btn-action link-wishlist towishlist" data-action="add-to-wishlist" data-toggle="tooltip" data-placement="top" title="<?php  echo __('Add to Wish List') ?>">
+                                    <span><?php  echo __('Add to Wish List') ?></span>
+                                </a>
+                            <?php } ?>
+                            <?php if ($block->getAddToCompareUrl() &&  (int)$this->_getConfig('product_addcompare_display', 1)){ ?>
+                                <?php
+                                $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare');
+                                ?>
+                                <a href="#" class="btn-action link-compare tocompare"
+                                   data-post='<?php  echo $compareHelper->getPostDataParams($_product);?>'
+                                   data-role="add-to-links"
+                                   data-toggle="tooltip" data-placement="top"
+                                   title="<?php  echo __('Add to Compare'); ?>">
+                                    <span><?php  echo __('Add to Compare') ?></span>
+                                </a>
+                            <?php }; ?>
+                        <?php } ?>
+                    </div>
+
+            <?php } ?>	<!--END ACTION-->
+
+        </div>
+        <?php if($nbi_type_show == 'slider' && ($i % $nbi_rows == 0 || $i == $count)) { ?>
+        </div>
+    <?php }
+        if ($nbi_type_show == 'loadmore'){ ?>
+            </div>
+            <?php if($i == 4) : ?>
+            </div>
+            <?php endif; ?>
+            <?php if($i == 7 || $i == $count && $i != 4) : ?>
+                </div>
+            <?php endif; ?>
+        <?php } ?>
+        <?php $clear = 'clr1';
+        if ($j % 2 == 0) $clear .= ' clr2';
+        if ($j % 3 == 0) $clear .= ' clr3';
+        if ($j % 4 == 0) $clear .= ' clr4';
+        if ($j % 5 == 0) $clear .= ' clr5';
+        if ($j % 6 == 0) $clear .= ' clr6';
+        ?>
+        <?php if($nbi_type_show == 'loadmore') { ?>
+        <?php } ?>
+    <?php }
+    if ($nbi_type_show == 'slider') {
+        echo '</div>';
+    }
+}?>
+<?php if ($nbi_type_show == 'slider') { ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            var $tag_id = $('#<?php echo $tag_id; ?>'),
+                parent_active = $('.spctabs-items-selected', $tag_id),
+                total_product = parent_active.data('total'),
+                tab_active = $('.super-items-inner',parent_active),
+                nb_column1 = <?php echo $this->_getConfig('nbi_column1'); ?>,
+                nb_column2 = <?php echo $this->_getConfig('nbi_column2'); ?>,
+                nb_column3 = <?php echo $this->_getConfig('nbi_column3'); ?>,
+                nb_column4 = <?php echo $this->_getConfig('nbi_column4'); ?>;
+
+            tab_active.owlCarousel({
+                nav: <?php echo $this->_getConfig('product_nav') ; ?>,
+                dots: false,
+                margin: 30,
+                loop:  <?php echo $this->_getConfig('product_loop') ; ?>,
+                autoplay: <?php echo $this->_getConfig('product_autoplay'); ?>,
+                autoplayHoverPause: <?php echo $this->_getConfig('product_autoplayHoverPause') ; ?>,
+                autoplayTimeout: <?php echo $this->_getConfig('product_intervalTimeout') ; ?>,
+                autoplaySpeed: <?php echo $this->_getConfig('product_autoplaySpeed') ; ?>,
+                navSpeed: <?php echo $this->_getConfig('product_navSpeed'); ?>,
+                mouseDrag: <?php echo  $this->_getConfig('product_mouseDrag'); ?>,
+                touchDrag: <?php echo $this->_getConfig('product_touchDrag'); ?>,
+                navRewind: true,
+                navText: [ '', '' ],
+                responsive: {
+                    0: {
+                        items: nb_column4,
+                        nav: total_product <= nb_column4 ? false : ((<?php echo $this->_getConfig('product_nav') ; ?>) ? true: false)
+                    },
+                    480: {
+                        items: nb_column3,
+                        nav: total_product <= nb_column3 ? false : ((<?php echo $this->_getConfig('product_nav') ; ?>) ? true: false)
+                    },
+                    768: {
+                        items: nb_column2,
+                        nav: total_product <= nb_column2 ? false : ((<?php echo $this->_getConfig('product_nav') ; ?>) ? true: false)
+                    },
+                    1200: {
+                        items: nb_column1,
+                        nav: total_product <= nb_column1 ? false : ((<?php echo $this->_getConfig('product_nav') ; ?>) ? true: false)
+                    }
+                }
+            });
+
+        });
+    </script>
+<?php } ?>

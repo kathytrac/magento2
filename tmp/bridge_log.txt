@@ -1,0 +1,4 @@
+[Fri, 15 Sep 2017 20:20:18 +0000]Intializing
+[Fri, 15 Sep 2017 20:20:18 +0000]Connecting to database
+[Fri, 15 Sep 2017 20:20:18 +0000]Creating tmp file
+[Fri, 15 Sep 2017 20:20:18 +0000]Openning tmp file

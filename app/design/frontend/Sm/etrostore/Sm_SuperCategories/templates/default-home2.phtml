@@ -1,0 +1,207 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Super Categories - Version 2.1.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+//$image_base = Mage::getModel('catalog/product')->getSmallImageUrl();
+$helper = $this->_helper();
+$cat_info = $this->getListCategoriesFilter();
+$list = $this->getListCriterionFilter(false);
+//effect
+$center = $this->_getConfig('center') == 1?'true':'false';
+$nav = $this->_getConfig('nav') == 1?'true':'false';
+$loop = $this->_getConfig('loop') == 1?'true':'false';
+$margin = (int)$this->_getConfig('margin') >= 0 ? $this->_getConfig('margin') : 5;
+$slideBy = (int)$this->_getConfig('slideBy') > 0 ? $this->_getConfig('slideBy') : 1;
+$autoplay = $this->_getConfig('autoplay') == 1 ? 'true' : 'false';
+$autoplayHoverPause = $this->_getConfig('autoplayHoverPause') == 1 ? 'true' : 'false';
+$autoplaySpeed = $this->_getConfig('autoplaySpeed') >= 0 ? $this->_getConfig('autoplaySpeed') : 5000;
+$navSpeed = $this->_getConfig('navSpeed') >= 0 ? $this->_getConfig('navSpeed') : 5000;
+$startPosition = $this->_getConfig('startPosition') > 0 ? $this->_getConfig('startPosition') : 1;
+$mouseDrag = $this->_getConfig('mouseDrag') == 1?'true':'false';
+$touchDrag = $this->_getConfig('touchDrag') == 1?'true':'false';
+$pretext = $this->_getConfig('pretext');
+$posttext = $this->_getConfig('posttext');
+
+$nb_column1 = $this->_getConfig('nb_column1', 1);
+$nb_column2 = $this->_getConfig('nb_column2', 2);
+$nb_column3 = $this->_getConfig('nb_column3', 3);
+$nb_column4 = $this->_getConfig('nb_column4', 4);
+$nb_column5 = $this->_getConfig('nb_column5', 5);
+$nbi_type_show = $this->_getConfig('nbi_type_show', 'loadmore');
+
+if (!empty($list)) {
+    $stop = (int)$this->_getConfig('stop',1) ? 'hover' : '';
+    $play = (int)$this->_getConfig('play',1);
+    $interval = (int)$this->_getConfig('delay');
+    $interval = $play ? $interval : 0;
+    $speed =(int)$this->_getConfig('duration');
+    $start = (int) $this->_getConfig('start');
+    $start = ( $start <= 0 || $start > count($list) ) ? 0 : $start - 1;
+    $step = (int)$this->_getConfig('scroll',1);
+    $step = $step <= 0 ? 1: $step;
+
+    $instance = rand() . time();
+    $tag_id = 'sm_super_categories_' . rand() . time();
+    $uniqued ='sm_super_slider_'.rand().time();
+    $class_spctabs = 'spctabs00-' . $this->_getConfig('nbi_column1', 4) . ' spctabs01-' . $this->_getConfig('nbi_column1', 3) . ' spctabs02-' . $this->_getConfig('nbi_column2', 3) . ' spctabs03-' . $this->_getConfig('nbi_column3', 2) . ' spctabs04-' . $this->_getConfig('nbi_column4', 1);
+    ?>
+    <?php $class_respl = 'preset01-' . $this->_getConfig('nb_column1', 4) . ' preset02-' . $this->_getConfig('nb_column2', 3) . ' preset03-' . $this->_getConfig('nb_column3', 2) . ' preset04-' . $this->_getConfig('nb_column4', 2) . ' preset05-' . $this->_getConfig('nb_column5', 1); ?>
+    <!--[if lt IE 9]>
+    <div id="<?php //echo $tag_id; ?>" class="sm-super-categories msie lt-ie9 first-load"><![endif]-->
+    <!--[if IE 9]>
+    <div id="<?php //echo $tag_id; ?>" class="sm-super-categories msie first-load"><![endif]-->
+    <!--[if gt IE 9]><!-->
+    <div id="<?php echo $tag_id; ?>" class="sm-super-categories first-load sm-super-categories-home2"><!--<![endif]-->
+        <?php if ($this->_getConfig('display_title')) { ?>
+            <div class="title-home">
+				<span>
+				<span class="first-sub"><?php $text_first = $this->_getConfig('title', 'Sm Super Categories'); echo substr($text_first,0,1); ?></span>
+				<span><?php echo $this->_getConfig('title', 'Sm Super Categories'); ?></span>
+				</span>
+            </div>
+        <?php
+        } ?>
+
+        <div class="category-wrap font-etro">
+            <?php foreach( $cat_info as $cat){
+                $cat_child = (isset($cat['child']) && $cat['child']) ? $cat['child'] : null;
+                ?>
+                <?php if( $cat_child != null ){?>
+                    <div id="<?php echo $uniqued; ?>" class="container-slider">
+                        <div class="slider not-js">
+                            <div class="vpo-wrap">
+                                <div class="vp">
+                                    <div class="vpi-wrap">
+                                        <?php $i = 0; ?>
+                                        <?php foreach( $cat_child as $item ){ $i++; if($i == 7) break;
+                                            if( $item['image'] == "" ){
+                                                $item['image'] = $block->getViewFileUrl('Sm_SuperCategories::images/nophoto.jpg');
+                                            }
+                                            ?>
+                                            <div class="item">
+                                                <div class="item-wrap">
+                                                    <div class="cat-child-image">
+                                                        <img  src="<?php echo $item['image'];?>" alt="<?php echo $item['title'];?>"/>
+                                                    </div>
+                                                    <div class="cat-child-title">
+                                                        <a href="<?php echo $item['link'];?>" <?php echo $helper->parseTarget($this->_getConfig('target', '_self')) ?>>
+                                                            <?php echo $helper->truncate($item['title'], $this->_getConfig('cat_title_maxlength', 25)); ?>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }?>
+            <?php }?>
+        </div>
+
+        <div class="spc-wrap ">
+            <div class="spc-tabs-container font-etro" data-delay="<?php echo $this->_getConfig('product_delay', 300); ?>"
+                 data-duration="<?php echo $this->_getConfig('product_duration', 600); ?>"
+                 data-effect="<?php echo $this->_getConfig('product_effect'); ?>"
+                 data-ajaxurl="<?php echo $block->getBaseUrl().'supercategories/index/index'; ?>"
+                 data-modid="<?php echo $tag_id; ?>">
+                <!--Begin Tabs-->
+                <?php include('default_tabs.phtml'); ?>
+                <?php include('default_js.phtml'); ?>
+            </div>
+            <div class="clearfix"></div>
+            <!-- End Tabs-->
+
+        </div>
+
+        <div class="spc-wrap ">
+
+
+            <?php
+            $cls_device = $class_spctabs;
+            $cls_animate = $this->_getConfig('product_effect');
+            ?>
+
+            <div class="super-border">
+
+                <div class="col-lg-2 col-md-3 col-sm-4 no-padding box-super-left">
+                    <div class="bg-img">
+                        <?php if(!empty($pretext)) {
+                            echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($pretext)->toHtml();
+                        }?>
+                    </div>
+                </div>
+
+                <?php if(!empty($posttext)) { ?>
+                    <div class="col-lg-3 hidden-md  col-sm-8 no-padding  box-super-center">
+                        <div class="slide-img">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($posttext)->toHtml();?>
+                        </div>
+                    </div>
+                <?php }?>
+
+                <div class="col-lg-7 col-md-9 no-padding box-super-right">
+                    <div class="spc-items-container <?php echo $cls_device.' '.$cls_animate; ?>"><!--Begin Items-->
+                        <?php foreach ($list as $items) {
+                            $child_items = isset($items['child']) ? $items['child'] : '';
+                            $cls = (isset($items['sel']) && $items['sel'] == "sel") ? ' spctabs-items-selected spc-items-loaded' : '';
+                            $cls .= ($items['entity_id'] == "*") ? ' items-category-all' : ' items-category-' . $items['entity_id'];
+                            ?>
+                            <div class="products-grid spc-items <?php echo $cls; ?>">
+                                <div class="spc-items-inner">
+                                    <?php if (!empty($child_items)) {
+                                        include('default_items.phtml');
+                                    } else {
+                                        ?>
+                                        <div class="spc-loading"></div>
+                                    <?php } ?>
+                                </div>
+                                <?php $classloaded = ($this->_getConfig('source_limit', 2) >= $items['count'] || $this->_getConfig('source_limit', 2) == 0) ? 'loaded' : '';
+                                if($nbi_type_show =='loadmore'){
+                                    ?>
+                                    <div class="spc-loadmore"
+                                         data-active-content=".items-category-<?php echo ($items['entity_id'] == "*") ? 'all' : $items['entity_id']; ?>"
+                                         data-categoryid="<?php echo $items['entity_id']; ?>"
+                                         data-rl_start="<?php echo $this->_getConfig('product_limitation', 2) ?>"
+                                         data-rl_total="<?php echo $items['count'] ?>"
+                                         data-ajaxurl="<?php echo $block->getBaseUrl().'supercategories/index/index'; ?>"
+                                         data-rl_allready="<?php echo __('All ready'); ?>"
+                                         data-modid="<?php echo $items['entity_id']; ?>"
+                                         data-rl_load="<?php echo $this->_getConfig('source_limit', 2) ?>">
+                                        <div class="spc-loadmore-btn <?php echo $classloaded ?>"
+                                             data-label="
+										<?php echo ($classloaded) ? __('All ready') : __('Load more'); ?>">
+                                            <span class="spc-image-loading"></span>
+                                            <img class="add-loadmore" src="<?php echo $block->getViewFileUrl('Sm_SuperCategories::images/add.png');?>" alt="" />
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--End Items-->
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        jQuery(document).ready(function($){
+        });
+        //]]>
+    </script>
+<?php
+} else {
+    echo 'Has no item to show!';
+} ?>
+
+
+

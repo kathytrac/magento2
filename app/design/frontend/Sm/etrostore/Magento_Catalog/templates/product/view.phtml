@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+
+<?php
+	$_config = $this->helper('Sm\Etrostore\Helper\Data');
+	$detailStyle = $_config->getProductDetail('detail_style');
+	$thumsStyle = $_config->getProductDetail('thumbs_style');
+    $show_related = $_config->getProductDetail('show_related');
+    $show_upsell = $_config->getProductDetail('show_upsell');
+
+	if($detailStyle == 'detail-1'){
+		include (dirname(__FILE__).'/detail-style/detail-1.phtml');
+	} else {
+		include (dirname(__FILE__).'/detail-style/detail-sidebar.phtml');
+	}
+?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tab-related-up-sell').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            /* activate: function(event) {
+             console.log('actived');
+             } */
+        });
+    });
+</script>

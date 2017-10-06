@@ -1,0 +1,22 @@
+.fieldset-small
+{
+    padding-bottom:0!important;
+}
+.fieldset-small legend{
+    display:block!important;
+}
+.fieldset-small legend span
+{
+    font-size:1.5rem!important;
+}
+
+input.pcDisabled {
+    background: #fcfcfc!important;
+    opacity: 0.9!important;
+}
+input.isValid {
+    background: #e0ffe1!important;
+}
+input.notValid {
+    background: #ffdada!important;
+}

@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+
+<?php
+	$_config = $this->helper('Sm\Etrostore\Helper\Data');
+?>
+<div class="quickview-detail-container detail-1 thumb-vertical">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 image-box-detail">
+			<?php echo $block->getChildHtml('product.info.media'); ?>
+		</div>
+		
+		<div class="col-lg-6 col-md-6 col-sm-12 info-box-detail">
+			<div class="info-detail-container">
+				<?php echo $block->getChildHtml('product.info.main'); ?>
+                <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('social-detail')->toHtml();?>
+			</div>
+		</div>
+	</div>
+</div>

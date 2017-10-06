@@ -1,0 +1,240 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Super Categories - Version 2.1.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+$_cfg = json_encode($this->_getConfig());
+$_cfg = strtr(rtrim(base64_encode($_cfg), '='), '+/', '-_');
+
+?>
+
+<script type="text/javascript">
+	//<![CDATA[
+	require([
+		"jquery",
+		"jquery/ui",
+		"redirectUrl",
+	], function ($) {	
+	$(document).ready(function () {
+		;
+		(function (element) {
+			var nbi_type_show = '<?php echo $this->_getConfig('nbi_type_show', 'loadmore');?>';
+			var nbi_rows = '<?php echo $this->_getConfig('nbi_rows');?>';
+			var posttext = '<?php echo $this->_getConfig('posttext');?>';
+			var $element = $(element),
+				$tab = $('.spc-tab', $element),
+				$tab_label = $('.spc-tab-label', $tab),
+				$tabs = $('.spc-tabs', $element),
+				ajax_url = $tabs.parents('.spc-tabs-container').attr('data-ajaxurl'),
+				effect = $tabs.parents('.spc-tabs-container').attr('data-effect'),
+				delay = $tabs.parents('.spc-tabs-container').attr('data-delay'),
+				duration = $tabs.parents('.spc-tabs-container').attr('data-duration'),
+				rl_moduleid = $tabs.parents('.spc-tabs-container').attr('data-modid'),
+				$items_content = $('.spc-items', $element),
+				$items_inner = $('.spc-items-inner', $items_content),
+				$items_first_active = $('.spctabs-items-selected', $element),
+				$load_more = $('.spc-loadmore', $element),
+				$btn_loadmore = $('.spc-loadmore-btn', $load_more),
+				$select_box = $('.spc-selectbox', $element),
+				$tab_label_select = $('.spc-tab-selected', $element);
+
+			enableSelectBoxes();
+			function enableSelectBoxes() {
+				$tab_wrap = $('.spc-tabs-wrap', $element),
+					$tab_label_select.html($('.spc-tab', $element).filter('.tab-sel').children('.spc-tab-label').html());
+				if ($(window).innerWidth() <= 479) {
+					$tab_wrap.addClass('spc-selectbox');
+				} else {
+					$tab_wrap.removeClass('spc-selectbox');
+				}
+			}
+
+			$('span.spc-tab-selected, span.spc-tab-arrow', $element).click(function () {
+				if ($('.spc-tabs', $element).hasClass('spc-open')) {
+					$('.spc-tabs', $element).removeClass('spc-open');
+				} else {
+					$('.spc-tabs', $element).addClass('spc-open');
+				}
+			});
+
+			$(window).resize(function () {
+				if ($(window).innerWidth() <= 479) {
+					$('.spc-tabs-wrap', $element).addClass('spc-selectbox');
+				} else {
+					$('.spc-tabs-wrap', $element).removeClass('spc-selectbox');
+				}
+			});
+
+			function showAnimateItems(el) {
+				var $_items = $('.new-spc-item', el), nub = 0;
+				$('.spc-loadmore-btn', el).fadeOut('fast');
+				$_items.each(function (i) {
+					nub++;
+					switch (effect) {
+						case 'none' :
+							$(this).css({'opacity': '1', 'filter': 'alpha(opacity = 100)'});
+							break;
+						default:
+							animatesItems($(this), nub * delay, i, el);
+					}
+					if (i == $_items.length - 1) {
+						$('.spc-loadmore-btn', el).fadeIn(delay);
+					}
+					$(this).removeClass('new-spc-item');
+				});
+			}
+
+			function animatesItems($this, fdelay, i, el) {
+				var $_items = $('.spc-item', el);
+				$this.attr("style",
+						"-webkit-animation:" + effect + " " + duration + "ms;"
+							+ "-moz-animation:" + effect + " " + duration + "ms;"
+							+ "-o-animation:" + effect + " " + duration + "ms;"
+							+ "-moz-animation-delay:" + fdelay + "ms;"
+							+ "-webkit-animation-delay:" + fdelay + "ms;"
+							+ "-o-animation-delay:" + fdelay + "ms;"
+							+ "animation-delay:" + fdelay + "ms;").delay(fdelay).animate({
+						opacity: 1,
+						filter: 'alpha(opacity = 100)'
+					}, {
+						delay: 100
+					});
+				if (i == ($_items.length - 1)) {
+					$(".spc-items-inner").addClass("play");
+				}
+			}
+
+			showAnimateItems($items_first_active);
+
+			$tab.on('click.tab', function () {
+				var $this = $(this);
+				if ($this.hasClass('tab-sel')) return false;
+				if ($this.parents('.spc-tabs').hasClass('spc-open')) {
+					$this.parents('.spc-tabs').removeClass('spc-open');
+				}
+				$tab.removeClass('tab-sel');
+				$this.addClass('tab-sel');
+				var items_active = $this.attr('data-active-content');
+				var _items_active = $(items_active, $element);
+				$items_content.removeClass('spctabs-items-selected');
+				_items_active.addClass('spctabs-items-selected');
+				$tab_label_select.html($tab.filter('.tab-sel').children('.spc-tab-label').html());
+				var $loading = $('.spc-loading', _items_active);
+				var loaded = _items_active.hasClass('spc-items-loaded');
+				if (!loaded && !_items_active.hasClass('spc-process')) {
+					_items_active.addClass('spc-process');
+					var category_id = $this.attr('data-category-id');
+					//alert('aaaa');
+					$loading.show();
+					//return;
+					$.ajax({
+						type: 'POST',
+						url: ajax_url,
+						data: {
+							super_categories_moduleid: rl_moduleid,
+							is_ajax_super_categories: 1,
+							ajax_reslisting_start: 0,
+							categoryid: category_id,
+							nbi_rows_post: nbi_rows,
+							posttext_post: posttext,
+							config: '<?php echo $_cfg; ?>',
+							time_temp:'<?php echo time().rand(); ?>'
+						},
+						success: function (data) {
+							if (data.items_markup != '') {
+								if (nbi_type_show == 'loadmore') {
+									$('.spc-items-inner', _items_active).html(data.items_markup);
+								}else{
+									$('.spc-loading', _items_active).replaceWith(data.items_markup);
+								}
+								_items_active.addClass('spc-items-loaded').removeClass('spc-process');
+								$loading.remove();
+								showAnimateItems(_items_active);
+								updateStatus(_items_active);
+								if(typeof(_SmQuickView) != 'undefined')
+								{
+									$("a.sm_quickview_handler").remove();
+									_SmQuickView();
+								}
+								if(typeof(loadaJax) != 'undefined')
+									loadaJax();							
+							}
+						},
+						dataType: 'json'
+					});
+
+				} else {
+					$('.spc-item', $items_content).removeAttr('style').addClass('new-spc-item').css('opacity', 0);
+					showAnimateItems(_items_active);
+				}
+			});
+
+			function updateStatus($el) {
+				$('.spc-loadmore-btn', $el).removeClass('loading');
+				var countitem = $('.spc-item', $el).length;
+				$('.spc-image-loading', $el).css({display: 'none'});
+				$('.spc-loadmore-btn', $el).parent().attr('data-rl_start', countitem);
+				var rl_total = $('.spc-loadmore-btn', $el).parent().attr('data-rl_total');
+				var rl_load = $('.spc-loadmore-btn', $el).parent().attr('data-rl_load');
+				var rl_allready = $('.spc-loadmore-btn', $el).parent().attr('data-rl_allready');
+
+				if (countitem >= rl_total) {
+					$('.spc-loadmore-btn', $el).addClass('loaded');
+					$('.spc-image-loading', $el).css({display: 'none'});
+					$('.spc-loadmore-btn', $el).attr('data-label', rl_allready);
+					$('.spc-loadmore-btn', $el).removeClass('loading');
+				}
+			}
+
+			$btn_loadmore.on('click.loadmore', function () {
+				var $this = $(this);
+				if ($this.hasClass('loaded') || $this.hasClass('loading')) {
+					return false;
+				} else {
+					$this.addClass('loading');
+					$('.spc-image-loading', $this).css({display: 'inline-block'});
+					var rl_start = $this.parent().attr('data-rl_start'),
+						rl_moduleid = $this.parent().attr('data-modid'),
+						rl_ajaxurl = $this.parent().attr('data-ajaxurl'),
+						effect = $this.parent().attr('data-effect'),
+						category_id = $this.parent().attr('data-categoryid'),
+						items_active = $this.parent().attr('data-active-content');
+					var _items_active = $(items_active, $element);
+					$.ajax({
+						type: 'POST',
+						url: rl_ajaxurl,
+						data: {
+							super_categories_moduleid: rl_moduleid,
+							is_ajax_super_categories: 1,
+							ajax_reslisting_start: rl_start,
+							categoryid: category_id,
+							config: '<?php echo $_cfg; ?>',
+							time_temp:'<?php echo time().rand(); ?>'
+						},
+						success: function (data) {
+							if (data.items_markup != '') {
+								$(data.items_markup).insertAfter($('.spc-item', _items_active).nextAll().last());
+								$('.spc-image-loading', $this).css({display: 'none'});
+								showAnimateItems(_items_active);
+								updateStatus(_items_active);
+								if(typeof(_SmQuickView) != 'undefined')
+								{
+									$("a.sm_quickview_handler").remove();
+									_SmQuickView();
+								}
+								if(typeof(loadaJax) != 'undefined')
+									loadaJax();
+							}
+						}, dataType: 'json'
+					});
+				}
+				return false;
+			});
+		})('#<?php echo $tag_id; ?>');
+	});
+	});
+	//]]>
+</script>

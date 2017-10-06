@@ -1,0 +1,82 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+
+<?php
+	$_config = $this->helper('Sm\Etrostore\Helper\Data');
+	$class_detail = $detailStyle . ' ' . 'thumb-' . $thumsStyle;
+    if($thumsStyle == 'vertical') {
+        $col_media = 'col-lg-5 col-md-6 col-sm-12 image-box-detail';
+        $col_content = 'col-lg-7 col-md-6 col-sm-12 info-box-detail';
+    }else {
+        $col_media = 'col-lg-5 col-md-5 col-sm-6 image-box-detail';
+        $col_content = 'col-lg-7 col-md-7 col-sm-6 info-box-detail';
+    }
+?>
+
+<div class="<?php echo $class_detail;?>">
+	<div class="row">
+		<div class="<?php echo $col_media;?>">
+			<?php echo $block->getChildHtml('product.info.media'); ?>
+		</div>
+		
+		<div class="<?php echo $col_content;?>">
+			<div class="info-detail-container">
+				<?php echo $block->getChildHtml('product.info.main'); ?>
+				<div class="social-catalog">
+					<div class="social-detail">
+						<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-548a6c0340f6f753" async="async"></script>
+						<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<div class="share-title font-etro"><?php echo __('Share')?></div><div class="addthis_sharing_toolbox"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-12 col-md-12 detail-bottom-wrapper">
+			<?php echo $block->getChildHtml('detail.bottom'); ?>
+		</div>
+
+        <div class="col-lg-12 col-md-12">
+            <div class="tab-related-up-sell"  id="tab-related-up-sell">
+                <ul class="resp-tabs-list">
+                    <?php if ($show_related == 1):?>
+                        <li class="box-content box-related-upsell last-block sn-border">
+                            <span class="first-sub"><?php echo __('R')?></span>
+                            <span><?php echo __('Related Products')?></span>
+                        </li>
+                    <?php endif; ?>
+
+                    <?php if ($show_upsell == 1):?>
+                        <li class="box-content box-related-upsell last-block">
+                            <span class="first-sub"><?php echo __('U')?></span>
+                            <span><?php echo __('Up - sell Products')?></span>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+
+                <div class="resp-tabs-container">
+                    <?php if ( $show_related == 1 ):?>
+                        <div>
+                            <?php echo $block->getChildHtml('related.product'); ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if ($show_upsell == 1) : ?>
+                        <div>
+                            <?php echo $block->getChildHtml('upsell.product'); ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

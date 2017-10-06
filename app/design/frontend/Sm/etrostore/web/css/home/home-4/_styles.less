@@ -1,0 +1,215 @@
+.home-page-4{
+  .content-home {
+    padding-top: 30px;
+    clear: both;
+    @media (min-width: 1200px) {
+      padding-top: 60px;
+    }
+  }
+  .title-home h2 {
+    position: relative;
+    color: #121212;
+    font-size: 200%;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /*BLOCK CATEGORIES*/
+  .full-wrapper-categories.block-categories{
+    background: #DEDEDE;
+    .sm-categories{
+      position: relative;
+      z-index: 9;
+      margin-top: 30px;
+      @media (min-width:1200px){
+        margin-top: -50px;
+      }
+    }
+  }
+
+  /*BLOCK suppercategories*/
+  .full-wrapper-sp-categories {
+    background: #DEDEDE;
+    .page-title-home {
+      border-top: 4px solid #282421;
+      margin-bottom: 0;
+      border-bottom: 2px solid #DEDEDE;
+      background: #f8f8f8;
+      > span {
+        background: #282421;
+      }
+    }
+
+    .box-img-deal {
+      clear: both;
+      padding-top: 60px;
+    }
+  }
+
+  .static-block-welcome {
+    text-align: center;
+    padding: 37px 0 29px;
+    span {
+      color: #464646;
+      padding-top: 18px;
+      display: block;
+    }
+  }
+
+  /*AWM BLOG*/
+  .full-wrapper-latest.block-latest-post{
+    background: url(../images/bg-latest.jpg) no-repeat center center;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
+    @media (min-width:1200px){
+      padding: 54px 0 59px;
+      min-height: 680px;
+      margin-top: 60px;
+    }
+    .title-home{
+      color: #fff;
+      h2{
+        color: #fff;
+      }
+      span{
+        padding: 18px 20px 25px;
+        text-align: center;
+        @media (min-width:1200px){
+          padding: 18px 105px 36px;
+          display: block;
+        }
+      }
+    }
+    .slider-blog{
+      .item{
+        color: #464646;
+        background: #fff;
+        @media (min-width:1200px){
+          min-height: 440px;
+        }
+      }
+      .image-blog{
+        img{
+          @media (min-width:1200px){
+            min-height: 150px;
+          }
+          .transition(.2s);
+          &:hover {
+            .opacity(0.8);
+          }
+        }
+      }
+      .postTitle{
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 20px 15px;
+        clear: both;
+        line-height: 22px;
+        a{
+          color: #000;
+          font-weight: 500;
+          &:hover{
+            //color: #ffaa00;
+          }
+        }
+      }
+      .info-blog{
+        padding: 25px 20px 0;
+        line-height: 22px;
+        .postContent{
+          padding-bottom: 14px;
+          border-bottom: 1px solid #eaeaea;
+        }
+        .action-post{
+          padding-top: 15px;
+          a{
+            font-size: 11px;
+            text-transform: uppercase;
+            //color: #ffaa00;
+            &:hover{
+              color: #000;
+            }
+          }
+        }
+      }
+      .info-post{
+        padding-left: 20px;
+        font-size: 108.333%;
+        padding-top: 15px;
+        li:first-child{
+          position: relative;
+          padding-right: 20px;
+          &:before{
+            content:"";
+            position: absolute;
+            right: 10px;
+            height: 12px;
+            width: 1px;
+            //background: #ffaa00;
+            top: 4px;
+          }
+        }
+        li{
+          list-style: none;
+          float: left;
+          display: inline-block;
+          //color: #ffaa00;
+          a{
+            //color: #ffaa00;
+          }
+        }
+      }
+    }
+    .owl-controls{
+      display: none;
+    }
+  }
+
+  /*BLOCK JOI*/
+  .full-wrapper-joi.block-joi{
+    text-align: center;
+    background: url(../images/bg-joi.jpg) no-repeat center center;
+    color: #fff;
+    padding: 20px 0;
+    @media (min-width:1200px){
+      padding: 54px 0 60px;
+    }
+    .box-joi-our{
+      .info-joi{
+        h2{
+          font-size: 183.333%;
+          text-transform: uppercase;
+          padding-bottom: 15px;
+          font-weight: 600;
+          letter-spacing: 0.2px;
+        }
+        .info-contetn{
+          padding: 0 20px 30px;
+          line-height: 22px;
+          @media (min-width:1200px){
+            padding: 0 100px 30px;
+          }
+          span{
+
+          }
+        }
+      }
+      .info-button{
+        text-align: center;
+        padding-left: 20px;
+        .transition(.2s);
+        a:first-child{
+          padding-right: 7px;
+        }
+        a:hover{
+          img{
+            .opacity(0.9);
+          }
+        }
+      }
+    }
+  }
+  /*END*/
+}

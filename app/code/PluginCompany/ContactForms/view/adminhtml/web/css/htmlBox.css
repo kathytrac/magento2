@@ -1,0 +1,7 @@
+.htmlBox {
+    padding:12px;
+    border:1px solid #ccc;
+    font-size:0.95em;
+    line-height:1.8em;
+    min-height: 45px;
+}

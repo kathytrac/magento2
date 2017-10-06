@@ -1,0 +1,292 @@
+// FOOTER STYLE 1
+.footer-content{
+  position: relative;
+  background-color: #33302b;
+  color: #a8a8a8;
+  /*FONT TITLE FOOTER*/
+  .footer-title{
+    font-size: 150%;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+  }
+  /*CONTENT ALL BOX*/
+  ul.footer-content{
+    li{
+      a{
+        float: left;
+        width: 100%;
+        line-height: 30px;
+        position: relative;
+        color: #a8a8a8;
+        &:hover{
+        }
+      }
+      &:hover{
+        a{
+          &:before{
+          }
+        }
+      }
+    }
+  }
+  /*FOOTER TOP*/
+  .footer-top{
+    .footer-block-content{
+      padding: 18px 0 8px;
+    }
+
+    /*FOOTER NEWLETTER*/
+    .footer-newsletter{
+      width: 100%;
+      .footer-title{
+        width: auto;
+        margin: 0;
+        font-size: 166.666%;
+        padding: 0px 0 0 15px;
+        letter-spacing: 1px;
+      }
+      .block-content{
+        float: right;
+        @media (min-width:1200px){
+          margin-right: 80px;
+        }
+      }
+      .form-subscribe-header{
+        padding-bottom: 25px;
+      }
+      #newsletter-validate-detail{
+        display: inline-block;
+        padding-bottom: 10px;
+        width: 100%;
+        .box-email{
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          .input-email{
+            position: relative;
+
+            .input-text{
+              color: #fff;
+              height: 35px;
+              padding: 0px 50px 0px 15px;
+              width: 370px;
+              border: none;
+              margin-right: 127px;
+            }
+          }
+          .action {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            > button{
+              background-color: #fff;
+              border: 0 none;
+              color: #000 !important;
+              cursor: pointer;
+              text-transform: uppercase;
+              height: 35px;
+              line-height: 38px;
+              margin: 0;
+              overflow: visible;
+              padding: 0 21px;
+              white-space: nowrap;
+              letter-spacing: 2px;
+              font-weight: 500;
+              &:hover{
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .socials-wrap{
+      float: right;
+      margin-right: 5px;
+      .title-follow{
+        display: none;
+      }
+      ul{
+        margin: 0;
+        .li-social{
+          float: left;
+        }
+        .fa{
+          margin: 0 10px 10px 0;
+          font-size: 15px;
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          line-height: 35px;
+          color: #fff;
+
+          &:hover{
+            border-color: #fff;
+            background: #fff;
+            .transition(.1s);
+          }
+        }
+        .name-social{
+          display: none;
+        }
+      }
+    }
+  }
+
+  /*FOOTER CENTER*/
+  .footer-center{
+    padding-top: 52px;
+    .footer-block-content{
+      position: relative;
+      padding-bottom: 55px;
+      /*FOOTER ABOUT*/
+      .footer-about{
+        img{
+          margin:8px 0 26px;
+
+        }
+        .footer-button-buy{
+          color: #fff;
+          text-transform: uppercase;
+          padding: 9px 22px;
+          display: inline-block;
+          letter-spacing: 2px;
+          font-weight: bold;
+          margin-top: 27px;
+          text-align: center;
+          .transition(.1s);
+          &:hover{
+          }
+        }
+      }
+      /*FOOTER OUT CONTACT*/
+      .footer-contact-content{
+        width: 100%;
+        .address{
+          padding: 15px 0 10px;
+        }
+        p{
+          line-height: 22px;
+          letter-spacing: 0.3px;
+          width: 100%;
+          padding-bottom: 5px;
+          a{
+            &:hover{
+              text-decoration:  underline;
+            }
+          }
+
+        }
+        .phone,
+        .email{
+          padding-top: 10px;
+          a{
+            color: #a8a8a8;
+            &:hover{
+            }
+          }
+        }
+
+        .email{
+          padding-top: 10px;
+        }
+      }
+    }
+    .footer-block-link{
+      padding-bottom: 25px;
+      ul li{
+        display: inline-block;
+        padding-left: 30px;
+        a{
+          color: #a8a8a8;
+          &:hover{
+          }
+        }
+        &:first:child{
+          padding-left: 0;
+        }
+      }
+      .bor-link:after{
+        content: "";
+        background: #646464;
+        width: 1px;
+        height: 12px;
+        position: relative;
+        display: inline-block;
+        top: 2px;
+        right: -15px;
+      }
+    }
+  }
+
+  /*FOOTER BOTTOM*/
+  .footer-bottom{
+    padding: 17px 0px 8px  0px;
+    background: #282421;
+    border-top: 8px solid #272320;
+    .box-bottom-support{
+      padding: 11px 0 22px;
+      /*BORDER ROTATE*/
+      .box-footer-sp{
+        &:before{
+          content:"";
+          width: 2px;
+          height: 60px;
+          left: -25px;
+          top: -13px;
+          position: absolute;
+          background: #5c5c5c;
+          -ms-transform: rotate(30deg); /* IE 9 */
+          -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+          transform: rotate(30deg);
+        }
+      }
+      .icon-sp{
+        float: left;
+        padding-right: 20px;
+        .fa{
+          font-size: 35px;
+        }
+      }
+      .content-sp{
+        position: relative;
+        top: -8px;
+        a{
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 116.66%;
+          letter-spacing: 0.3px;
+          &:hover{
+            .transition(.2s);
+          }
+        }
+        span{
+          line-height: 30px;
+          font-size: 108.333%;
+        }
+      }
+    }
+    .box-bottom-link{
+      line-height: 60px;
+      border-top: 1px solid #3c3c3c;
+      .copyright-footer{
+        a{
+          color: #a8a8a8;
+          &:hover{
+          }
+        }
+      }
+      .payment{
+        float: right;
+        cursor: pointer;
+        &:hover{
+          .opacity(0.7);
+        }
+      }
+    }
+  }
+}

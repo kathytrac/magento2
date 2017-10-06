@@ -1,0 +1,115 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+$_config = $this->helper('Sm\Etrostore\Helper\Data');
+?>
+<div class="block-social">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-548a6c0340f6f753" async="async"></script>
+</div>
+<div class="footer-container">
+    <div class="block-clien">
+        <div class="container">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-client-say')->toHtml(); ?>
+        </div>
+    </div>
+    <div class="footer-content">
+        <!--Go To Top-->
+        <?php if($_config->getAdvanced('show_gototop')){ ?>
+            <a id="yt-totop" href="javascript:void(0)" title="Go to Top"></a>
+            <script type="text/javascript">
+                jQuery(document).ready(function($){
+                    $("#yt-totop").hide();
+                    $(function () {
+                        var wh = $(window).height();
+                        var whtml =  $(document).height();
+                        $(window).scroll(function () {
+                            if ($(this).scrollTop() > whtml/10) {
+                                $('#yt-totop').fadeIn();
+                            } else {
+                                $('#yt-totop').fadeOut();
+                            }
+                        });
+                        $('#yt-totop').click(function () {
+                            $('body,html').animate({
+                                scrollTop: 0
+                            }, 800);
+                            return false;
+                        });
+                    });
+                });
+            </script>
+        <?php } ?>
+        <!-- FOOTER TOP -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-block-content">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <?php echo $block->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('subscribe-footer.phtml')->toHtml(); ?>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <?php echo $block->getLayout()->createBlock('Magento\Framework\View\Element\Template')->setTemplate('Magento_Theme::html/social.phtml')->toHtml(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END FOOTER TOP-->
+
+        <div class="footer-center">
+            <div class="container">
+                <div class="footer-block-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 no-padding-r">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-about')->toHtml(); ?>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-out-shop')->toHtml(); ?>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-orders')->toHtml(); ?>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-contact-info')->toHtml(); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block-link">
+                    <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-link')->toHtml(); ?>
+                </div>
+            </div>
+        </div><!-- END FOOTER CENTER-->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="box-bottom-support">
+                    <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-bottom-support')->toHtml(); ?>
+                </div>
+                <div class="box-bottom-link">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="copyright-footer">
+                                <?php if($_config->getAdvanced('custom_copyright')){ ?>
+                                    <?php echo $_config->getAdvanced('copyright_content') ?>
+                                <?php } else {?>
+                                    <?php /* @escapeNotVerified */ echo $block->getCopyright() ?>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-5">
+                            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('payment-footer')->toHtml(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END FOOTER bottom-->
+    </div>
+</div>
+
+
+

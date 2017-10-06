@@ -1,0 +1,215 @@
+﻿.default-style{
+  border: 1px solid #eaeaea;
+  .resp-accordion{
+    display: none;
+  }
+
+  .resp-tabs-list{
+    li{
+      padding: 8px 25px;
+      border: 1px solid #eaeaea;
+      list-style: none;
+      cursor: pointer;
+      line-height: 32px;
+      float: left;
+      font-size:133.33%;
+      color: #000;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: -2px 0 3px -1px;
+      .transition(.1s);
+      &.resp-tab-active,
+      &:hover{
+        background: #ffaa00;
+        border-color: #ffaa00;
+        border-left-color: #ffaa00;
+        color: #fff;
+      }
+
+    }
+  }
+
+  .resp-tabs-container{
+    clear: both;
+    .resp-tab-content{
+      display: none;
+      border: none;
+
+      &.resp-tab-content-active{
+        display: block;
+      }
+    }
+  }
+}
+
+
+// TAB RELATED-UP
+ul.resp-tabs-list, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.resp-tabs-list{
+  display: table;
+  width: 100%;
+  position: relative;
+  bottom: -1px;
+
+}
+
+.product-collateral .resp-tabs-list li {
+  padding: 8px 25px;
+  border: 1px solid #eaeaea;
+  list-style: none;
+  cursor: pointer;
+  line-height: 32px;
+  float: left;
+  font-size:133.33%;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: -2px 0 0 -1px;
+  .transition(.1s);
+  &:hover{
+    background: #ffaa00;
+    border-color: #ffaa00;
+    border-left-color: #ffaa00;
+    color: #fff;
+  }
+
+}
+.tab-related-up-sell .resp-tabs-container .resp-tab-content{
+  padding: 0;
+}
+.resp-tabs-container {
+  padding: 0px;
+  clear: left;
+  .resp-tab-content{
+    padding: 33px 30px 25px;
+  }
+  .std{
+    margin-bottom: -10px;
+    ul{
+      list-style: none;
+
+      li{
+        &:before{
+          .font-awesome(f00c,13px);
+          color: #ffaa00;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+  color: #666;
+}
+
+.product-collateral .resp-tabs-list .resp-tab-active {
+  color: #fff;
+  text-transform: uppercase;
+  background: #ffaa00;
+  border-color: #ffaa00;
+}
+
+.resp-content-active, .resp-accordion-active {
+  display: block;
+}
+
+h2.resp-accordion {
+  font-size: 108.33%;
+  text-transform: uppercase;
+  border:1px solid #ffaa00;
+  margin-top:-1px;
+  padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+  border-bottom: 0px solid #ffaa00 !important;
+  margin-bottom: 0px !important;
+  padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+  border-bottom: 12px solid #ffaa00 !important;
+  background: blue;
+}
+
+
+/*RELATE UPPSEL*/
+.tab-related-up-sell{
+  padding: 30px 0 0;
+  ul.resp-tabs-list{
+    text-align: left;
+    border: none;
+    border-top: 4px solid #ffaa00;
+    background: #f8f8f8;
+    li{
+      display: inline-block;
+      float: left;
+      text-transform: uppercase;
+      font-weight: 600;
+      background: transparent;
+      font-size: 183.333%;
+      padding: 0px 15px 0 20px;
+      cursor: pointer;
+      line-height: 50px;
+      background: #ffbc56;
+      position: relative;
+      &:last-child{
+        border-left: 2px solid #fff;
+      }
+      span:last-child{
+        color:#fff;
+        position: relative;
+      }
+      .first-sub{
+        position: absolute;
+        line-height: 50px;
+        font-size: 70px;
+        top: 3px;
+        left: 10px;
+        color: #ffaa00;
+        &:hover{
+
+        }
+      }
+    }
+    li:hover{
+      background: #ffaa00;
+      .first-sub{
+        color: #ffbc56;
+      }
+    }
+    li.resp-tab-active{
+      background: #ffaa00;
+      .first-sub{
+        color: #ffbc56;
+      }
+    }
+  }
+
+  /*BOX PRODUCT*/
+  .resp-tabs-container{
+    margin-top: 3px;
+  }
+}
+.tab-related-up-sell .resp-tab-content.resp-tab-content-active{
+  height: auto!important;
+}
+.tab-related-up-sell .resp-tab-content{
+  display: block !important;
+  overflow: hidden;
+  height: 0;
+  border: none;
+  padding: 0;
+}

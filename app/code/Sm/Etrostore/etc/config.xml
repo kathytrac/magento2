@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<etrostore>
+		
+			<general>
+				<theme_color>#ffaa00</theme_color>
+				<theme_color_active>#ffbc56</theme_color_active>
+				<body_font></body_font>
+				<body_google_font></body_google_font>
+				<font_size></font_size>
+				<body_link_color></body_link_color>
+				<body_link_hover_color></body_link_hover_color>
+				<body_text_color></body_text_color> 	
+				<body_background_color></body_background_color>
+				<use_background_image></use_background_image>
+				<body_background_image></body_background_image>
+				<use_customize_image></use_customize_image>
+				<background_customize_image></background_customize_image>
+				<background_repeat></background_repeat>
+				<background_position></background_position>
+				<element_google_font></element_google_font>
+				<google_font_targets></google_font_targets>
+				<menu_style></menu_style>
+				<menu_ontop></menu_ontop>
+				<responsive_menu></responsive_menu>
+			</general>
+			
+			<theme_layout>
+				<layout_style></layout_style>
+				<header_style></header_style>
+				<device_responsive></device_responsive>
+			</theme_layout>
+			
+			<product_listing>
+				<onecolumn_device_1200></onecolumn_device_1200>
+				<onecolumn_device_992></onecolumn_device_992>
+				<onecolumn_device_768></onecolumn_device_768>
+				<onecolumn_device_481></onecolumn_device_481>
+				<onecolumn_device_less_481></onecolumn_device_less_481>
+				<twocolumn_device_1200></twocolumn_device_1200>
+				<twocolumn_device_992></twocolumn_device_992>
+				<twocolumn_device_768></twocolumn_device_768>
+				<twocolumn_device_481></twocolumn_device_481>
+				<twocolumn_device_less_481></twocolumn_device_less_481>	
+				<threecolumn_device_1200></threecolumn_device_1200>
+				<threecolumn_device_992></threecolumn_device_992>
+				<threecolumn_device_768></threecolumn_device_768>
+				<threecolumn_device_481></threecolumn_device_481>
+				<threecolumn_device_less_481></threecolumn_device_less_481>						
+			</product_listing>
+			
+			<product_detail>
+				<detail_style></detail_style>
+				<thumbs_style></thumbs_style>
+				<use_zoom_image></use_zoom_image>
+				<zoom_mode></zoom_mode>
+				<mouse_zoom></mouse_zoom>
+				<lightbox_types></lightbox_types>
+				<open_close_effect></open_close_effect>
+				<next_prev_effect></next_prev_effect>
+				<mouse_lightbox></mouse_lightbox>
+				<show_related></show_related>
+				<related_limit></related_limit>
+				<show_upsell></show_upsell>
+				<upsell_limit></upsell_limit>
+				<tab_style></tab_style>
+				<show_custom_tab></show_custom_tab>
+				<custom_tab_name></custom_tab_name>
+				<customtab_content></customtab_content>
+			</product_detail>
+			
+			<socials>
+				<show_facebook></show_facebook>
+				<facebook_name></facebook_name>
+				<facebook_url></facebook_url>
+				<show_twitter></show_twitter>
+				<twitter_name></twitter_name>
+				<twitter_url></twitter_url>
+				<show_google></show_google>
+				<google_name></google_name>
+				<google_url></google_url>
+				<show_linkedin></show_linkedin>
+				<linkedin_name></linkedin_name>
+				<linkedin_url></linkedin_url>
+				<show_pinterest></show_pinterest>
+				<pinterest_name></pinterest_name>	
+				<pinterest_url></pinterest_url>				
+			</socials>			
+			
+			<advanced>
+				<show_gototop></show_gototop>
+				<show_addtocart_button></show_addtocart_button>
+				<show_wishlist_button></show_wishlist_button>
+				<show_compare_button></show_compare_button>
+				<show_newsletter_popup></show_newsletter_popup>
+				<custom_copyright></custom_copyright>
+				<copyright_content></copyright_content>	
+				<custom_css></custom_css>
+				<custom_js></custom_js>					
+			</advanced>
+			
+			<theme_install>
+				<overwrite_blocks>0</overwrite_blocks>
+				<overwrite_pages>0</overwrite_pages>
+			</theme_install>
+			
+		</etrostore>
+	</default>
+</config>

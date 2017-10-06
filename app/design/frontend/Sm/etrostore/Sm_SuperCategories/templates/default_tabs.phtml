@@ -1,0 +1,25 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Super Categories - Version 2.1.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/?>
+
+<div class="spc-tabs-wrap">
+	<span class='spc-tab-selected'></span>
+	<span class='spc-tab-arrow'>&#9660;</span>
+	<ul class="spc-tabs cf">
+		<?php
+		foreach ($list as $tab) {?>
+				<li class="spc-tab <?php echo isset($tab['sel']) ? ' tab-sel tab-loaded' : ''; ?>"
+				    data-category-id="<?php echo $tab['entity_id']; ?>"
+				    data-active-content=".items-category-<?php echo $tab['entity_id']; ?>">
+					<span class="spc-tab-label">
+						<?php echo $tab['title'];?>
+					</span>
+				</li>
+		<?php } ?>
+	</ul>
+</div>

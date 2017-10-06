@@ -1,0 +1,10 @@
+<table cellpadding='0' width='100%' style='border: 1px solid grey;border-top: 1px solid #ccc;'>
+    <tbody>
+        <?php foreach($this->getSubmissionParams() as $key => $param){ ?>
+            <tr>
+                <td><?php echo $key; ?></td>
+                <td><?php echo $param; ?></td>
+            </tr>
+        <?php } ?>
+    </tbody>
+</table>

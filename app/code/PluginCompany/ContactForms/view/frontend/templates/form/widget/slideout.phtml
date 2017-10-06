@@ -1,0 +1,43 @@
+<?php
+/*
+ * Created by:  Milan Simek
+ * Company:     Plugin Company
+ *
+ * LICENSE: http://plugin.company/docs/magento-extensions/magento-extension-license-agreement
+ *
+ * YOU WILL ALSO FIND A PDF COPY OF THE LICENSE IN THE DOWNLOADED ZIP FILE
+ *
+ * FOR QUESTIONS AND SUPPORT
+ * PLEASE DON'T HESITATE TO CONTACT US AT:
+ *
+ * SUPPORT@PLUGIN.COMPANY
+ */
+?>
+halllooooo
+<style type="text/css">
+    .slideout_scroll_wrapper .pccf_loader {
+        display:none!important;
+    }
+</style>
+<div style="display:none;position:fixed" class="pcform_slide pcform_<?php echo $this->getSlideoutPosition();?> <?php if($this->getAutoHide()){ ?>pccf_autohide<?php } ?>">
+    <div class="open_pcform" style="background-color:#<?php echo str_replace('#','',$this->getButtonColor());?>" onclick="showPCForm('<?php echo substr($this->getSlideoutPosition(),0,6);?>','<?php echo $this->getAnimation();?>',this,<?php echo $this->getMargin();?>)">
+        <?php if($title = $this->getTitle()){ ?>
+            <div class="pcc_titlewrap">
+                <p style="background:#<?php echo str_replace('#','',$this->getButtonColor());?>;color:#<?php echo str_replace('#','',$this->getTitleColor());?>"><?php echo $this->getTitle();?></p>
+            </div>
+        <?php }else{ ?>
+            <i style="color:#<?php echo $this->getTitleColor();?>" class="demo-icon pc-contact-icon-mail"></i>
+        <?php } ?>
+    </div>
+    <div class="slideout_scroll_wrapper">
+        <?php echo $this->getFormHtml(); ?>
+    </div>
+</div>
+
+<script type="text/javascript">
+require(["jquery", "prototype"], function(jQuery) {
+
+    PCCFSlideout = true;
+
+});
+</script>
